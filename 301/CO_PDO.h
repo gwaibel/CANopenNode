@@ -39,6 +39,17 @@
                        CO_CONFIG_PDO_SYNC_ENABLE)
 #endif
 
+#ifdef CO_CONFIG_CANFD
+#define CO_PDO_LENGTH       64
+#else
+#define CO_PDO_LENGTH       8
+#endif
+
+/*
+CANFD Data length:
+0...8 / 12 / 16 / 20 / 24 / 32 / 48 / 64
+*/
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -104,13 +115,71 @@ typedef struct{
         - Bit 8-15:  Subindex from object distionary.
         - Bit 16-31: Index from object distionary. */
     uint32_t            mappedObject1;
-    uint32_t            mappedObject2;  /**< Same */
-    uint32_t            mappedObject3;  /**< Same */
-    uint32_t            mappedObject4;  /**< Same */
-    uint32_t            mappedObject5;  /**< Same */
-    uint32_t            mappedObject6;  /**< Same */
-    uint32_t            mappedObject7;  /**< Same */
-    uint32_t            mappedObject8;  /**< Same */
+    uint32_t            mappedObject2;
+    uint32_t            mappedObject3;
+    uint32_t            mappedObject4;
+    uint32_t            mappedObject5;
+    uint32_t            mappedObject6;
+    uint32_t            mappedObject7;
+    uint32_t            mappedObject8;
+#ifdef CO_CONFIG_CANFD
+    uint32_t            mappedObject9;
+    uint32_t            mappedObject10;
+    uint32_t            mappedObject11;
+    uint32_t            mappedObject12;
+    uint32_t            mappedObject13;
+    uint32_t            mappedObject14;
+    uint32_t            mappedObject15;
+    uint32_t            mappedObject16;
+    uint32_t            mappedObject17;
+    uint32_t            mappedObject18;
+    uint32_t            mappedObject19;
+    uint32_t            mappedObject20;
+    uint32_t            mappedObject21;
+    uint32_t            mappedObject22;
+    uint32_t            mappedObject23;
+    uint32_t            mappedObject24;
+    uint32_t            mappedObject25;
+    uint32_t            mappedObject26;
+    uint32_t            mappedObject27;
+    uint32_t            mappedObject28;
+    uint32_t            mappedObject29;
+    uint32_t            mappedObject30;
+    uint32_t            mappedObject31;
+    uint32_t            mappedObject32;
+    uint32_t            mappedObject33;
+    uint32_t            mappedObject34;
+    uint32_t            mappedObject35;
+    uint32_t            mappedObject36;
+    uint32_t            mappedObject37;
+    uint32_t            mappedObject38;
+    uint32_t            mappedObject39;
+    uint32_t            mappedObject40;
+    uint32_t            mappedObject41;
+    uint32_t            mappedObject42;
+    uint32_t            mappedObject43;
+    uint32_t            mappedObject44;
+    uint32_t            mappedObject45;
+    uint32_t            mappedObject46;
+    uint32_t            mappedObject47;
+    uint32_t            mappedObject48;
+    uint32_t            mappedObject49;
+    uint32_t            mappedObject50;
+    uint32_t            mappedObject51;
+    uint32_t            mappedObject52;
+    uint32_t            mappedObject53;
+    uint32_t            mappedObject54;
+    uint32_t            mappedObject55;
+    uint32_t            mappedObject56;
+    uint32_t            mappedObject57;
+    uint32_t            mappedObject58;
+    uint32_t            mappedObject59;
+    uint32_t            mappedObject60;
+    uint32_t            mappedObject61;
+    uint32_t            mappedObject62;
+    uint32_t            mappedObject63;
+    uint32_t            mappedObject64;
+#endif
 }CO_RPDOMapPar_t;
 
 
@@ -161,13 +230,71 @@ typedef struct{
         - Bit 8-15:  Subindex from object distionary.
         - Bit 16-31: Index from object distionary. */
     uint32_t            mappedObject1;
-    uint32_t            mappedObject2;  /**< Same */
-    uint32_t            mappedObject3;  /**< Same */
-    uint32_t            mappedObject4;  /**< Same */
-    uint32_t            mappedObject5;  /**< Same */
-    uint32_t            mappedObject6;  /**< Same */
-    uint32_t            mappedObject7;  /**< Same */
-    uint32_t            mappedObject8;  /**< Same */
+    uint32_t            mappedObject2;
+    uint32_t            mappedObject3;
+    uint32_t            mappedObject4;
+    uint32_t            mappedObject5;
+    uint32_t            mappedObject6;
+    uint32_t            mappedObject7;
+    uint32_t            mappedObject8;
+#ifdef CO_CONFIG_CANFD
+    uint32_t            mappedObject9;
+    uint32_t            mappedObject10;
+    uint32_t            mappedObject11;
+    uint32_t            mappedObject12;
+    uint32_t            mappedObject13;
+    uint32_t            mappedObject14;
+    uint32_t            mappedObject15;
+    uint32_t            mappedObject16;
+    uint32_t            mappedObject17;
+    uint32_t            mappedObject18;
+    uint32_t            mappedObject19;
+    uint32_t            mappedObject20;
+    uint32_t            mappedObject21;
+    uint32_t            mappedObject22;
+    uint32_t            mappedObject23;
+    uint32_t            mappedObject24;
+    uint32_t            mappedObject25;
+    uint32_t            mappedObject26;
+    uint32_t            mappedObject27;
+    uint32_t            mappedObject28;
+    uint32_t            mappedObject29;
+    uint32_t            mappedObject30;
+    uint32_t            mappedObject31;
+    uint32_t            mappedObject32;
+    uint32_t            mappedObject33;
+    uint32_t            mappedObject34;
+    uint32_t            mappedObject35;
+    uint32_t            mappedObject36;
+    uint32_t            mappedObject37;
+    uint32_t            mappedObject38;
+    uint32_t            mappedObject39;
+    uint32_t            mappedObject40;
+    uint32_t            mappedObject41;
+    uint32_t            mappedObject42;
+    uint32_t            mappedObject43;
+    uint32_t            mappedObject44;
+    uint32_t            mappedObject45;
+    uint32_t            mappedObject46;
+    uint32_t            mappedObject47;
+    uint32_t            mappedObject48;
+    uint32_t            mappedObject49;
+    uint32_t            mappedObject50;
+    uint32_t            mappedObject51;
+    uint32_t            mappedObject52;
+    uint32_t            mappedObject53;
+    uint32_t            mappedObject54;
+    uint32_t            mappedObject55;
+    uint32_t            mappedObject56;
+    uint32_t            mappedObject57;
+    uint32_t            mappedObject58;
+    uint32_t            mappedObject59;
+    uint32_t            mappedObject60;
+    uint32_t            mappedObject61;
+    uint32_t            mappedObject62;
+    uint32_t            mappedObject63;
+    uint32_t            mappedObject64;
+#endif
 }CO_TPDOMapPar_t;
 
 
@@ -187,8 +314,8 @@ typedef struct{
     bool_t              valid;
     /** Data length of the received PDO message. Calculated from mapping */
     uint8_t             dataLength;
-    /** Pointers to 8 data objects, where PDO will be copied */
-    uint8_t            *mapPointer[8];
+    /** Pointers to 8/64(CANFD) data objects, where PDO will be copied */
+    uint8_t            *mapPointer[CO_PDO_LENGTH];
 #if ((CO_CONFIG_PDO) & CO_CONFIG_PDO_SYNC_ENABLE) || defined CO_DOXYGEN
     CO_SYNC_t          *SYNC;           /**< From CO_RPDO_init() */
     /** True, if PDO synchronous (transmissionType <= 240) */
@@ -196,10 +323,10 @@ typedef struct{
     /** Variable indicates, if new PDO message received from CAN bus. */
     volatile void      *CANrxNew[2];
     /** 8 data bytes of the received message. */
-    uint8_t             CANrxData[2][8];
+    uint8_t             CANrxData[2][CO_PDO_LENGTH];
 #else
     volatile void      *CANrxNew[1];
-    uint8_t             CANrxData[1][8];
+    uint8_t             CANrxData[1][CO_PDO_LENGTH];
 #endif
 #if ((CO_CONFIG_PDO) & CO_CONFIG_FLAG_CALLBACK_PRE) || defined CO_DOXYGEN
     /** From CO_RPDO_initCallbackPre() or NULL */
@@ -210,6 +337,12 @@ typedef struct{
     CO_CANmodule_t     *CANdevRx;       /**< From CO_RPDO_init() */
     uint16_t            CANdevRxIdx;    /**< From CO_RPDO_init() */
 }CO_RPDO_t;
+
+#ifdef CO_CONFIG_CANFD
+    typedef uint64_t    COSFlags_t;
+#else
+    typedef uint8_t     COSFlags_t;
+#endif
 
 
 /**
@@ -230,8 +363,8 @@ typedef struct{
     /** If application set this flag, PDO will be later sent by
     function CO_TPDO_process(). Depends on transmission type. */
     uint8_t             sendRequest;
-    /** Pointers to 8 data objects, where PDO will be copied */
-    uint8_t            *mapPointer[8];
+    /** Pointers to 8/64(CANFD) data objects, where PDO will be copied */
+    uint8_t            *mapPointer[CO_PDO_LENGTH];
     /** Inhibit timer used for inhibit PDO sending translated to microseconds */
     uint32_t            inhibitTimer;
     /** Event timer used for PDO sending translated to microseconds */
@@ -239,7 +372,7 @@ typedef struct{
     /** Each flag bit is connected with one mapPointer. If flag bit
     is true, CO_TPDO_process() functiuon will send PDO if
     Change of State is detected on value pointed by that mapPointer */
-    uint8_t             sendIfCOSFlags;
+    COSFlags_t          sendIfCOSFlags;
 #if ((CO_CONFIG_PDO) & CO_CONFIG_PDO_SYNC_ENABLE) || defined CO_DOXYGEN
     /** SYNC counter used for PDO sending */
     uint8_t             syncCounter;

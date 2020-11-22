@@ -187,7 +187,7 @@ static uint32_t CO_PDOfindMap(
         uint8_t                 R_T,
         uint8_t               **ppData,
         uint8_t                *pLength,
-        uint8_t                *pSendIfCOSFlags,
+        COSFlags_t             *pSendIfCOSFlags,
         uint8_t                *pIsMultibyteVar)
 {
     uint16_t entryNo;
@@ -207,8 +207,8 @@ static uint32_t CO_PDOfindMap(
     dataLen >>= 3;    /* new data length is in bytes */
     *pLength += dataLen;
 
-    /* total PDO length can not be more than 8 bytes */
-    if(*pLength > 8) return CO_SDO_AB_MAP_LEN;  /* The number and length of the objects to be mapped would exceed PDO length. */
+    /* total PDO length can not be more than 8/64 (CANFD) bytes */
+    if(*pLength > CO_PDO_LENGTH) return CO_SDO_AB_MAP_LEN;  /* The number and length of the objects to be mapped would exceed PDO length. */
 
     /* is there a reference to dummy entries */
     if(index <=7 && subIndex == 0){
@@ -293,7 +293,7 @@ static uint32_t CO_RPDOconfigMap(CO_RPDO_t* RPDO, uint8_t noOfMappedObjects){
     for(i=noOfMappedObjects; i>0; i--){
         int16_t j;
         uint8_t* pData;
-        uint8_t dummy = 0;
+        COSFlags_t dummy = 0;
         uint8_t prevLength = length;
         uint8_t MBvar;
         uint32_t map = *(pMap++);
@@ -620,7 +620,7 @@ static CO_SDO_abortCode_t CO_ODF_RPDOmap(CO_ODF_arg_t *ODF_arg){
     if(ODF_arg->subIndex == 0){
         uint8_t *value = (uint8_t*) ODF_arg->data;
 
-        if(*value > 8)
+        if(*value > CO_PDO_LENGTH)
             return CO_SDO_AB_MAP_LEN;  /* Number and length of object to be mapped exceeds PDO length. */
 
         /* configure mapping */
@@ -632,7 +632,7 @@ static CO_SDO_abortCode_t CO_ODF_RPDOmap(CO_ODF_arg_t *ODF_arg){
         uint32_t value = CO_getUint32(ODF_arg->data);
         uint8_t* pData;
         uint8_t length = 0;
-        uint8_t dummy = 0;
+        COSFlags_t dummy = 0;
         uint8_t MBvar;
 
         if(RPDO->dataLength)
@@ -686,7 +686,7 @@ static CO_SDO_abortCode_t CO_ODF_TPDOmap(CO_ODF_arg_t *ODF_arg){
     if(ODF_arg->subIndex == 0){
         uint8_t *value = (uint8_t*) ODF_arg->data;
 
-        if(*value > 8)
+        if(*value > CO_PDO_LENGTH)
             return CO_SDO_AB_MAP_LEN;  /* Number and length of object to be mapped exceeds PDO length. */
 
         /* configure mapping */
@@ -698,7 +698,7 @@ static CO_SDO_abortCode_t CO_ODF_TPDOmap(CO_ODF_arg_t *ODF_arg){
         uint32_t value = CO_getUint32(ODF_arg->data);
         uint8_t* pData;
         uint8_t length = 0;
-        uint8_t dummy = 0;
+        COSFlags_t dummy = 0;
         uint8_t MBvar;
 
         if(TPDO->dataLength)
@@ -875,6 +875,72 @@ uint8_t CO_TPDOisCOS(CO_TPDO_t *TPDO){
     ppODdataByte = &TPDO->mapPointer[TPDO->dataLength];
 
     switch(TPDO->dataLength){
+#ifdef CO_CONFIG_CANFD
+        case 64: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<63))) return 1; // fallthrough
+        case 63: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<62))) return 1; // fallthrough
+        case 62: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<61))) return 1; // fallthrough
+        case 61: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<60))) return 1; // fallthrough
+        case 60: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<59))) return 1; // fallthrough
+        case 59: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<58))) return 1; // fallthrough
+        case 58: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<57))) return 1; // fallthrough
+        case 57: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<56))) return 1; // fallthrough
+        case 56: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<55))) return 1; // fallthrough
+        case 55: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<54))) return 1; // fallthrough
+        case 54: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<53))) return 1; // fallthrough
+        case 53: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<52))) return 1; // fallthrough
+        case 52: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<51))) return 1; // fallthrough
+        case 51: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<50))) return 1; // fallthrough
+        case 50: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<49))) return 1; // fallthrough
+        case 49: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<48))) return 1; // fallthrough
+        case 48: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<47))) return 1; // fallthrough
+        case 47: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<46))) return 1; // fallthrough
+        case 46: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<45))) return 1; // fallthrough
+        case 45: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<44))) return 1; // fallthrough
+        case 44: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<43))) return 1; // fallthrough
+        case 43: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<42))) return 1; // fallthrough
+        case 42: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<41))) return 1; // fallthrough
+        case 41: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<40))) return 1; // fallthrough
+        case 40: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<39))) return 1; // fallthrough
+        case 39: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<38))) return 1; // fallthrough
+        case 38: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<37))) return 1; // fallthrough
+        case 37: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<36))) return 1; // fallthrough
+        case 36: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<35))) return 1; // fallthrough
+        case 35: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<34))) return 1; // fallthrough
+        case 34: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<33))) return 1; // fallthrough
+        case 33: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<32))) return 1; // fallthrough
+        case 32: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<31))) return 1; // fallthrough
+        case 31: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<30))) return 1; // fallthrough
+        case 30: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<29))) return 1; // fallthrough
+        case 29: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<28))) return 1; // fallthrough
+        case 28: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<27))) return 1; // fallthrough
+        case 27: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<26))) return 1; // fallthrough
+        case 26: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<25))) return 1; // fallthrough
+        case 25: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<24))) return 1; // fallthrough
+        case 24: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<23))) return 1; // fallthrough
+        case 23: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<22))) return 1; // fallthrough
+        case 22: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<21))) return 1; // fallthrough
+        case 21: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<20))) return 1; // fallthrough
+        case 20: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<19))) return 1; // fallthrough
+        case 19: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<18))) return 1; // fallthrough
+        case 18: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<17))) return 1; // fallthrough
+        case 17: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<16))) return 1; // fallthrough
+        case 16: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<15))) return 1; // fallthrough
+        case 15: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<14))) return 1; // fallthrough
+        case 14: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<13))) return 1; // fallthrough
+        case 13: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<12))) return 1; // fallthrough
+        case 12: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<11))) return 1; // fallthrough
+        case 11: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<10))) return 1; // fallthrough
+        case 10: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<9))) return 1; // fallthrough
+        case 9: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<8))) return 1; // fallthrough
+        case 8: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<7))) return 1; // fallthrough
+        case 7: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<6))) return 1; // fallthrough
+        case 6: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<5))) return 1; // fallthrough
+        case 5: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<4))) return 1; // fallthrough
+        case 4: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<3))) return 1; // fallthrough
+        case 3: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<2))) return 1; // fallthrough
+        case 2: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<1))) return 1; // fallthrough
+        case 1: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&(1ull<<0))) return 1; // fallthrough
+#else
         case 8: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&0x80)) return 1; // fallthrough
         case 7: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&0x40)) return 1; // fallthrough
         case 6: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&0x20)) return 1; // fallthrough
@@ -883,6 +949,7 @@ uint8_t CO_TPDOisCOS(CO_TPDO_t *TPDO){
         case 3: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&0x04)) return 1; // fallthrough
         case 2: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&0x02)) return 1; // fallthrough
         case 1: if(*(--pPDOdataByte) != **(--ppODdataByte) && (TPDO->sendIfCOSFlags&0x01)) return 1; // fallthrough
+#endif
     }
 
     return 0;

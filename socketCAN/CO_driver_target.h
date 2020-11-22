@@ -53,6 +53,8 @@
 extern "C" {
 #endif
 
+#define CO_CONFIG_CANFD
+
 /* Stack configuration override default values.
  * For more information see file CO_config.h. */
 #ifdef CO_SINGLE_THREAD

@@ -212,7 +212,11 @@ typedef struct {
 typedef struct {
     uint32_t ident;
     uint8_t DLC;
-    uint8_t data[8];
+#ifdef CO_CONFIG_CANFD
+    uint8_t data[64];
+#else
+    uint8_t data[64];
+#endif
     volatile bool_t bufferFull;
     volatile bool_t syncFlag;
 } CO_CANtx_t;
