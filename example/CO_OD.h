@@ -53,10 +53,10 @@
 
 /*******************************************************************************
    FILE INFO:
-      FileName:     IO Example
+      FileName:     
       FileVersion:  0
-      CreationTime: 17:24:43
-      CreationDate: 2016-03-25
+      CreationTime: 12:00
+      CreationDate: 01-01-0001
       CreatedBy:    JP
 *******************************************************************************/
 
@@ -131,6 +131,61 @@
                UNSIGNED32     mappedObject7;
                UNSIGNED32     mappedObject8;
                UNSIGNED32     mappedObject9;
+               UNSIGNED32     mappedObject10;
+               UNSIGNED32     mappedObject11;
+               UNSIGNED32     mappedObject12;
+               UNSIGNED32     mappedObject13;
+               UNSIGNED32     mappedObject14;
+               UNSIGNED32     mappedObject15;
+               UNSIGNED32     mappedObject16;
+               UNSIGNED32     mappedObject17;
+               UNSIGNED32     mappedObject18;
+               UNSIGNED32     mappedObject19;
+               UNSIGNED32     mappedObject20;
+               UNSIGNED32     mappedObject21;
+               UNSIGNED32     mappedObject22;
+               UNSIGNED32     mappedObject23;
+               UNSIGNED32     mappedObject24;
+               UNSIGNED32     mappedObject25;
+               UNSIGNED32     mappedObject26;
+               UNSIGNED32     mappedObject27;
+               UNSIGNED32     mappedObject28;
+               UNSIGNED32     mappedObject29;
+               UNSIGNED32     mappedObject30;
+               UNSIGNED32     mappedObject31;
+               UNSIGNED32     mappedObject32;
+               UNSIGNED32     mappedObject33;
+               UNSIGNED32     mappedObject34;
+               UNSIGNED32     mappedObject35;
+               UNSIGNED32     mappedObject36;
+               UNSIGNED32     mappedObject37;
+               UNSIGNED32     mappedObject38;
+               UNSIGNED32     mappedObject39;
+               UNSIGNED32     mappedObject40;
+               UNSIGNED32     mappedObject41;
+               UNSIGNED32     mappedObject42;
+               UNSIGNED32     mappedObject43;
+               UNSIGNED32     mappedObject44;
+               UNSIGNED32     mappedObject45;
+               UNSIGNED32     mappedObject46;
+               UNSIGNED32     mappedObject47;
+               UNSIGNED32     mappedObject48;
+               UNSIGNED32     mappedObject49;
+               UNSIGNED32     mappedObject50;
+               UNSIGNED32     mappedObject51;
+               UNSIGNED32     mappedObject52;
+               UNSIGNED32     mappedObject53;
+               UNSIGNED32     mappedObject54;
+               UNSIGNED32     mappedObject55;
+               UNSIGNED32     mappedObject56;
+               UNSIGNED32     mappedObject57;
+               UNSIGNED32     mappedObject58;
+               UNSIGNED32     mappedObject59;
+               UNSIGNED32     mappedObject60;
+               UNSIGNED32     mappedObject61;
+               UNSIGNED32     mappedObject62;
+               UNSIGNED32     mappedObject63;
+               UNSIGNED32     mappedObject64;
                }              OD_RPDOMappingParameter_t;
 /*1800      */ typedef struct {
                UNSIGNED8      maxSubIndex;
@@ -151,6 +206,62 @@
                UNSIGNED32     mappedObject6;
                UNSIGNED32     mappedObject7;
                UNSIGNED32     mappedObject8;
+               UNSIGNED32     mappedObject9;
+               UNSIGNED32     mappedObject10;
+               UNSIGNED32     mappedObject11;
+               UNSIGNED32     mappedObject12;
+               UNSIGNED32     mappedObject13;
+               UNSIGNED32     mappedObject14;
+               UNSIGNED32     mappedObject15;
+               UNSIGNED32     mappedObject16;
+               UNSIGNED32     mappedObject17;
+               UNSIGNED32     mappedObject18;
+               UNSIGNED32     mappedObject19;
+               UNSIGNED32     mappedObject20;
+               UNSIGNED32     mappedObject21;
+               UNSIGNED32     mappedObject22;
+               UNSIGNED32     mappedObject23;
+               UNSIGNED32     mappedObject24;
+               UNSIGNED32     mappedObject25;
+               UNSIGNED32     mappedObject26;
+               UNSIGNED32     mappedObject27;
+               UNSIGNED32     mappedObject28;
+               UNSIGNED32     mappedObject29;
+               UNSIGNED32     mappedObject30;
+               UNSIGNED32     mappedObject31;
+               UNSIGNED32     mappedObject32;
+               UNSIGNED32     mappedObject33;
+               UNSIGNED32     mappedObject34;
+               UNSIGNED32     mappedObject35;
+               UNSIGNED32     mappedObject36;
+               UNSIGNED32     mappedObject37;
+               UNSIGNED32     mappedObject38;
+               UNSIGNED32     mappedObject39;
+               UNSIGNED32     mappedObject40;
+               UNSIGNED32     mappedObject41;
+               UNSIGNED32     mappedObject42;
+               UNSIGNED32     mappedObject43;
+               UNSIGNED32     mappedObject44;
+               UNSIGNED32     mappedObject45;
+               UNSIGNED32     mappedObject46;
+               UNSIGNED32     mappedObject47;
+               UNSIGNED32     mappedObject48;
+               UNSIGNED32     mappedObject49;
+               UNSIGNED32     mappedObject50;
+               UNSIGNED32     mappedObject51;
+               UNSIGNED32     mappedObject52;
+               UNSIGNED32     mappedObject53;
+               UNSIGNED32     mappedObject54;
+               UNSIGNED32     mappedObject55;
+               UNSIGNED32     mappedObject56;
+               UNSIGNED32     mappedObject57;
+               UNSIGNED32     mappedObject58;
+               UNSIGNED32     mappedObject59;
+               UNSIGNED32     mappedObject60;
+               UNSIGNED32     mappedObject61;
+               UNSIGNED32     mappedObject62;
+               UNSIGNED32     mappedObject63;
+               UNSIGNED32     mappedObject64;
                }              OD_TPDOMappingParameter_t;
 /*2120      */ typedef struct {
                UNSIGNED8      maxSubIndex;
@@ -354,6 +465,61 @@
         #define OD_1600_7_RPDOMappingParameter_mappedObject7        7
         #define OD_1600_8_RPDOMappingParameter_mappedObject8        8
         #define OD_1600_9_RPDOMappingParameter_mappedObject9        9
+        #define OD_1600_10_RPDOMappingParameter_mappedObject10      10
+        #define OD_1600_11_RPDOMappingParameter_mappedObject11      11
+        #define OD_1600_12_RPDOMappingParameter_mappedObject12      12
+        #define OD_1600_13_RPDOMappingParameter_mappedObject13      13
+        #define OD_1600_14_RPDOMappingParameter_mappedObject14      14
+        #define OD_1600_15_RPDOMappingParameter_mappedObject15      15
+        #define OD_1600_16_RPDOMappingParameter_mappedObject16      16
+        #define OD_1600_17_RPDOMappingParameter_mappedObject17      17
+        #define OD_1600_18_RPDOMappingParameter_mappedObject18      18
+        #define OD_1600_19_RPDOMappingParameter_mappedObject19      19
+        #define OD_1600_20_RPDOMappingParameter_mappedObject20      20
+        #define OD_1600_21_RPDOMappingParameter_mappedObject21      21
+        #define OD_1600_22_RPDOMappingParameter_mappedObject22      22
+        #define OD_1600_23_RPDOMappingParameter_mappedObject23      23
+        #define OD_1600_24_RPDOMappingParameter_mappedObject24      24
+        #define OD_1600_25_RPDOMappingParameter_mappedObject25      25
+        #define OD_1600_26_RPDOMappingParameter_mappedObject26      26
+        #define OD_1600_27_RPDOMappingParameter_mappedObject27      27
+        #define OD_1600_28_RPDOMappingParameter_mappedObject28      28
+        #define OD_1600_29_RPDOMappingParameter_mappedObject29      29
+        #define OD_1600_30_RPDOMappingParameter_mappedObject30      30
+        #define OD_1600_31_RPDOMappingParameter_mappedObject31      31
+        #define OD_1600_32_RPDOMappingParameter_mappedObject32      32
+        #define OD_1600_33_RPDOMappingParameter_mappedObject33      33
+        #define OD_1600_34_RPDOMappingParameter_mappedObject34      34
+        #define OD_1600_35_RPDOMappingParameter_mappedObject35      35
+        #define OD_1600_36_RPDOMappingParameter_mappedObject36      36
+        #define OD_1600_37_RPDOMappingParameter_mappedObject37      37
+        #define OD_1600_38_RPDOMappingParameter_mappedObject38      38
+        #define OD_1600_39_RPDOMappingParameter_mappedObject39      39
+        #define OD_1600_40_RPDOMappingParameter_mappedObject40      40
+        #define OD_1600_41_RPDOMappingParameter_mappedObject41      41
+        #define OD_1600_42_RPDOMappingParameter_mappedObject42      42
+        #define OD_1600_43_RPDOMappingParameter_mappedObject43      43
+        #define OD_1600_44_RPDOMappingParameter_mappedObject44      44
+        #define OD_1600_45_RPDOMappingParameter_mappedObject45      45
+        #define OD_1600_46_RPDOMappingParameter_mappedObject46      46
+        #define OD_1600_47_RPDOMappingParameter_mappedObject47      47
+        #define OD_1600_48_RPDOMappingParameter_mappedObject48      48
+        #define OD_1600_49_RPDOMappingParameter_mappedObject49      49
+        #define OD_1600_50_RPDOMappingParameter_mappedObject50      50
+        #define OD_1600_51_RPDOMappingParameter_mappedObject51      51
+        #define OD_1600_52_RPDOMappingParameter_mappedObject52      52
+        #define OD_1600_53_RPDOMappingParameter_mappedObject53      53
+        #define OD_1600_54_RPDOMappingParameter_mappedObject54      54
+        #define OD_1600_55_RPDOMappingParameter_mappedObject55      55
+        #define OD_1600_56_RPDOMappingParameter_mappedObject56      56
+        #define OD_1600_57_RPDOMappingParameter_mappedObject57      57
+        #define OD_1600_58_RPDOMappingParameter_mappedObject58      58
+        #define OD_1600_59_RPDOMappingParameter_mappedObject59      59
+        #define OD_1600_60_RPDOMappingParameter_mappedObject60      60
+        #define OD_1600_61_RPDOMappingParameter_mappedObject61      61
+        #define OD_1600_62_RPDOMappingParameter_mappedObject62      62
+        #define OD_1600_63_RPDOMappingParameter_mappedObject63      63
+        #define OD_1600_64_RPDOMappingParameter_mappedObject64      64
 
 /*1601 */
         #define OD_1601_RPDOMappingParameter                        0x1601
@@ -367,6 +533,62 @@
         #define OD_1601_6_RPDOMappingParameter_mappedObject6        6
         #define OD_1601_7_RPDOMappingParameter_mappedObject7        7
         #define OD_1601_8_RPDOMappingParameter_mappedObject8        8
+        #define OD_1601_9_RPDOMappingParameter_mappedObject9        9
+        #define OD_1601_10_RPDOMappingParameter_mappedObject10      10
+        #define OD_1601_11_RPDOMappingParameter_mappedObject11      11
+        #define OD_1601_12_RPDOMappingParameter_mappedObject12      12
+        #define OD_1601_13_RPDOMappingParameter_mappedObject13      13
+        #define OD_1601_14_RPDOMappingParameter_mappedObject14      14
+        #define OD_1601_15_RPDOMappingParameter_mappedObject15      15
+        #define OD_1601_16_RPDOMappingParameter_mappedObject16      16
+        #define OD_1601_17_RPDOMappingParameter_mappedObject17      17
+        #define OD_1601_18_RPDOMappingParameter_mappedObject18      18
+        #define OD_1601_19_RPDOMappingParameter_mappedObject19      19
+        #define OD_1601_20_RPDOMappingParameter_mappedObject20      20
+        #define OD_1601_21_RPDOMappingParameter_mappedObject21      21
+        #define OD_1601_22_RPDOMappingParameter_mappedObject22      22
+        #define OD_1601_23_RPDOMappingParameter_mappedObject23      23
+        #define OD_1601_24_RPDOMappingParameter_mappedObject24      24
+        #define OD_1601_25_RPDOMappingParameter_mappedObject25      25
+        #define OD_1601_26_RPDOMappingParameter_mappedObject26      26
+        #define OD_1601_27_RPDOMappingParameter_mappedObject27      27
+        #define OD_1601_28_RPDOMappingParameter_mappedObject28      28
+        #define OD_1601_29_RPDOMappingParameter_mappedObject29      29
+        #define OD_1601_30_RPDOMappingParameter_mappedObject30      30
+        #define OD_1601_31_RPDOMappingParameter_mappedObject31      31
+        #define OD_1601_32_RPDOMappingParameter_mappedObject32      32
+        #define OD_1601_33_RPDOMappingParameter_mappedObject33      33
+        #define OD_1601_34_RPDOMappingParameter_mappedObject34      34
+        #define OD_1601_35_RPDOMappingParameter_mappedObject35      35
+        #define OD_1601_36_RPDOMappingParameter_mappedObject36      36
+        #define OD_1601_37_RPDOMappingParameter_mappedObject37      37
+        #define OD_1601_38_RPDOMappingParameter_mappedObject38      38
+        #define OD_1601_39_RPDOMappingParameter_mappedObject39      39
+        #define OD_1601_40_RPDOMappingParameter_mappedObject40      40
+        #define OD_1601_41_RPDOMappingParameter_mappedObject41      41
+        #define OD_1601_42_RPDOMappingParameter_mappedObject42      42
+        #define OD_1601_43_RPDOMappingParameter_mappedObject43      43
+        #define OD_1601_44_RPDOMappingParameter_mappedObject44      44
+        #define OD_1601_45_RPDOMappingParameter_mappedObject45      45
+        #define OD_1601_46_RPDOMappingParameter_mappedObject46      46
+        #define OD_1601_47_RPDOMappingParameter_mappedObject47      47
+        #define OD_1601_48_RPDOMappingParameter_mappedObject48      48
+        #define OD_1601_49_RPDOMappingParameter_mappedObject49      49
+        #define OD_1601_50_RPDOMappingParameter_mappedObject50      50
+        #define OD_1601_51_RPDOMappingParameter_mappedObject51      51
+        #define OD_1601_52_RPDOMappingParameter_mappedObject52      52
+        #define OD_1601_53_RPDOMappingParameter_mappedObject53      53
+        #define OD_1601_54_RPDOMappingParameter_mappedObject54      54
+        #define OD_1601_55_RPDOMappingParameter_mappedObject55      55
+        #define OD_1601_56_RPDOMappingParameter_mappedObject56      56
+        #define OD_1601_57_RPDOMappingParameter_mappedObject57      57
+        #define OD_1601_58_RPDOMappingParameter_mappedObject58      58
+        #define OD_1601_59_RPDOMappingParameter_mappedObject59      59
+        #define OD_1601_60_RPDOMappingParameter_mappedObject60      60
+        #define OD_1601_61_RPDOMappingParameter_mappedObject61      61
+        #define OD_1601_62_RPDOMappingParameter_mappedObject62      62
+        #define OD_1601_63_RPDOMappingParameter_mappedObject63      63
+        #define OD_1601_64_RPDOMappingParameter_mappedObject64      64
 
 /*1602 */
         #define OD_1602_RPDOMappingParameter                        0x1602
@@ -380,6 +602,62 @@
         #define OD_1602_6_RPDOMappingParameter_mappedObject6        6
         #define OD_1602_7_RPDOMappingParameter_mappedObject7        7
         #define OD_1602_8_RPDOMappingParameter_mappedObject8        8
+        #define OD_1602_9_RPDOMappingParameter_mappedObject9        9
+        #define OD_1602_10_RPDOMappingParameter_mappedObject10      10
+        #define OD_1602_11_RPDOMappingParameter_mappedObject11      11
+        #define OD_1602_12_RPDOMappingParameter_mappedObject12      12
+        #define OD_1602_13_RPDOMappingParameter_mappedObject13      13
+        #define OD_1602_14_RPDOMappingParameter_mappedObject14      14
+        #define OD_1602_15_RPDOMappingParameter_mappedObject15      15
+        #define OD_1602_16_RPDOMappingParameter_mappedObject16      16
+        #define OD_1602_17_RPDOMappingParameter_mappedObject17      17
+        #define OD_1602_18_RPDOMappingParameter_mappedObject18      18
+        #define OD_1602_19_RPDOMappingParameter_mappedObject19      19
+        #define OD_1602_20_RPDOMappingParameter_mappedObject20      20
+        #define OD_1602_21_RPDOMappingParameter_mappedObject21      21
+        #define OD_1602_22_RPDOMappingParameter_mappedObject22      22
+        #define OD_1602_23_RPDOMappingParameter_mappedObject23      23
+        #define OD_1602_24_RPDOMappingParameter_mappedObject24      24
+        #define OD_1602_25_RPDOMappingParameter_mappedObject25      25
+        #define OD_1602_26_RPDOMappingParameter_mappedObject26      26
+        #define OD_1602_27_RPDOMappingParameter_mappedObject27      27
+        #define OD_1602_28_RPDOMappingParameter_mappedObject28      28
+        #define OD_1602_29_RPDOMappingParameter_mappedObject29      29
+        #define OD_1602_30_RPDOMappingParameter_mappedObject30      30
+        #define OD_1602_31_RPDOMappingParameter_mappedObject31      31
+        #define OD_1602_32_RPDOMappingParameter_mappedObject32      32
+        #define OD_1602_33_RPDOMappingParameter_mappedObject33      33
+        #define OD_1602_34_RPDOMappingParameter_mappedObject34      34
+        #define OD_1602_35_RPDOMappingParameter_mappedObject35      35
+        #define OD_1602_36_RPDOMappingParameter_mappedObject36      36
+        #define OD_1602_37_RPDOMappingParameter_mappedObject37      37
+        #define OD_1602_38_RPDOMappingParameter_mappedObject38      38
+        #define OD_1602_39_RPDOMappingParameter_mappedObject39      39
+        #define OD_1602_40_RPDOMappingParameter_mappedObject40      40
+        #define OD_1602_41_RPDOMappingParameter_mappedObject41      41
+        #define OD_1602_42_RPDOMappingParameter_mappedObject42      42
+        #define OD_1602_43_RPDOMappingParameter_mappedObject43      43
+        #define OD_1602_44_RPDOMappingParameter_mappedObject44      44
+        #define OD_1602_45_RPDOMappingParameter_mappedObject45      45
+        #define OD_1602_46_RPDOMappingParameter_mappedObject46      46
+        #define OD_1602_47_RPDOMappingParameter_mappedObject47      47
+        #define OD_1602_48_RPDOMappingParameter_mappedObject48      48
+        #define OD_1602_49_RPDOMappingParameter_mappedObject49      49
+        #define OD_1602_50_RPDOMappingParameter_mappedObject50      50
+        #define OD_1602_51_RPDOMappingParameter_mappedObject51      51
+        #define OD_1602_52_RPDOMappingParameter_mappedObject52      52
+        #define OD_1602_53_RPDOMappingParameter_mappedObject53      53
+        #define OD_1602_54_RPDOMappingParameter_mappedObject54      54
+        #define OD_1602_55_RPDOMappingParameter_mappedObject55      55
+        #define OD_1602_56_RPDOMappingParameter_mappedObject56      56
+        #define OD_1602_57_RPDOMappingParameter_mappedObject57      57
+        #define OD_1602_58_RPDOMappingParameter_mappedObject58      58
+        #define OD_1602_59_RPDOMappingParameter_mappedObject59      59
+        #define OD_1602_60_RPDOMappingParameter_mappedObject60      60
+        #define OD_1602_61_RPDOMappingParameter_mappedObject61      61
+        #define OD_1602_62_RPDOMappingParameter_mappedObject62      62
+        #define OD_1602_63_RPDOMappingParameter_mappedObject63      63
+        #define OD_1602_64_RPDOMappingParameter_mappedObject64      64
 
 /*1603 */
         #define OD_1603_RPDOMappingParameter                        0x1603
@@ -393,6 +671,62 @@
         #define OD_1603_6_RPDOMappingParameter_mappedObject6        6
         #define OD_1603_7_RPDOMappingParameter_mappedObject7        7
         #define OD_1603_8_RPDOMappingParameter_mappedObject8        8
+        #define OD_1603_9_RPDOMappingParameter_mappedObject9        9
+        #define OD_1603_10_RPDOMappingParameter_mappedObject10      10
+        #define OD_1603_11_RPDOMappingParameter_mappedObject11      11
+        #define OD_1603_12_RPDOMappingParameter_mappedObject12      12
+        #define OD_1603_13_RPDOMappingParameter_mappedObject13      13
+        #define OD_1603_14_RPDOMappingParameter_mappedObject14      14
+        #define OD_1603_15_RPDOMappingParameter_mappedObject15      15
+        #define OD_1603_16_RPDOMappingParameter_mappedObject16      16
+        #define OD_1603_17_RPDOMappingParameter_mappedObject17      17
+        #define OD_1603_18_RPDOMappingParameter_mappedObject18      18
+        #define OD_1603_19_RPDOMappingParameter_mappedObject19      19
+        #define OD_1603_20_RPDOMappingParameter_mappedObject20      20
+        #define OD_1603_21_RPDOMappingParameter_mappedObject21      21
+        #define OD_1603_22_RPDOMappingParameter_mappedObject22      22
+        #define OD_1603_23_RPDOMappingParameter_mappedObject23      23
+        #define OD_1603_24_RPDOMappingParameter_mappedObject24      24
+        #define OD_1603_25_RPDOMappingParameter_mappedObject25      25
+        #define OD_1603_26_RPDOMappingParameter_mappedObject26      26
+        #define OD_1603_27_RPDOMappingParameter_mappedObject27      27
+        #define OD_1603_28_RPDOMappingParameter_mappedObject28      28
+        #define OD_1603_29_RPDOMappingParameter_mappedObject29      29
+        #define OD_1603_30_RPDOMappingParameter_mappedObject30      30
+        #define OD_1603_31_RPDOMappingParameter_mappedObject31      31
+        #define OD_1603_32_RPDOMappingParameter_mappedObject32      32
+        #define OD_1603_33_RPDOMappingParameter_mappedObject33      33
+        #define OD_1603_34_RPDOMappingParameter_mappedObject34      34
+        #define OD_1603_35_RPDOMappingParameter_mappedObject35      35
+        #define OD_1603_36_RPDOMappingParameter_mappedObject36      36
+        #define OD_1603_37_RPDOMappingParameter_mappedObject37      37
+        #define OD_1603_38_RPDOMappingParameter_mappedObject38      38
+        #define OD_1603_39_RPDOMappingParameter_mappedObject39      39
+        #define OD_1603_40_RPDOMappingParameter_mappedObject40      40
+        #define OD_1603_41_RPDOMappingParameter_mappedObject41      41
+        #define OD_1603_42_RPDOMappingParameter_mappedObject42      42
+        #define OD_1603_43_RPDOMappingParameter_mappedObject43      43
+        #define OD_1603_44_RPDOMappingParameter_mappedObject44      44
+        #define OD_1603_45_RPDOMappingParameter_mappedObject45      45
+        #define OD_1603_46_RPDOMappingParameter_mappedObject46      46
+        #define OD_1603_47_RPDOMappingParameter_mappedObject47      47
+        #define OD_1603_48_RPDOMappingParameter_mappedObject48      48
+        #define OD_1603_49_RPDOMappingParameter_mappedObject49      49
+        #define OD_1603_50_RPDOMappingParameter_mappedObject50      50
+        #define OD_1603_51_RPDOMappingParameter_mappedObject51      51
+        #define OD_1603_52_RPDOMappingParameter_mappedObject52      52
+        #define OD_1603_53_RPDOMappingParameter_mappedObject53      53
+        #define OD_1603_54_RPDOMappingParameter_mappedObject54      54
+        #define OD_1603_55_RPDOMappingParameter_mappedObject55      55
+        #define OD_1603_56_RPDOMappingParameter_mappedObject56      56
+        #define OD_1603_57_RPDOMappingParameter_mappedObject57      57
+        #define OD_1603_58_RPDOMappingParameter_mappedObject58      58
+        #define OD_1603_59_RPDOMappingParameter_mappedObject59      59
+        #define OD_1603_60_RPDOMappingParameter_mappedObject60      60
+        #define OD_1603_61_RPDOMappingParameter_mappedObject61      61
+        #define OD_1603_62_RPDOMappingParameter_mappedObject62      62
+        #define OD_1603_63_RPDOMappingParameter_mappedObject63      63
+        #define OD_1603_64_RPDOMappingParameter_mappedObject64      64
 
 /*1800 */
         #define OD_1800_TPDOCommunicationParameter                  0x1800
@@ -450,6 +784,62 @@
         #define OD_1A00_6_TPDOMappingParameter_mappedObject6        6
         #define OD_1A00_7_TPDOMappingParameter_mappedObject7        7
         #define OD_1A00_8_TPDOMappingParameter_mappedObject8        8
+        #define OD_1A00_9_TPDOMappingParameter_mappedObject9        9
+        #define OD_1A00_10_TPDOMappingParameter_mappedObject10      10
+        #define OD_1A00_11_TPDOMappingParameter_mappedObject11      11
+        #define OD_1A00_12_TPDOMappingParameter_mappedObject12      12
+        #define OD_1A00_13_TPDOMappingParameter_mappedObject13      13
+        #define OD_1A00_14_TPDOMappingParameter_mappedObject14      14
+        #define OD_1A00_15_TPDOMappingParameter_mappedObject15      15
+        #define OD_1A00_16_TPDOMappingParameter_mappedObject16      16
+        #define OD_1A00_17_TPDOMappingParameter_mappedObject17      17
+        #define OD_1A00_18_TPDOMappingParameter_mappedObject18      18
+        #define OD_1A00_19_TPDOMappingParameter_mappedObject19      19
+        #define OD_1A00_20_TPDOMappingParameter_mappedObject20      20
+        #define OD_1A00_21_TPDOMappingParameter_mappedObject21      21
+        #define OD_1A00_22_TPDOMappingParameter_mappedObject22      22
+        #define OD_1A00_23_TPDOMappingParameter_mappedObject23      23
+        #define OD_1A00_24_TPDOMappingParameter_mappedObject24      24
+        #define OD_1A00_25_TPDOMappingParameter_mappedObject25      25
+        #define OD_1A00_26_TPDOMappingParameter_mappedObject26      26
+        #define OD_1A00_27_TPDOMappingParameter_mappedObject27      27
+        #define OD_1A00_28_TPDOMappingParameter_mappedObject28      28
+        #define OD_1A00_29_TPDOMappingParameter_mappedObject29      29
+        #define OD_1A00_30_TPDOMappingParameter_mappedObject30      30
+        #define OD_1A00_31_TPDOMappingParameter_mappedObject31      31
+        #define OD_1A00_32_TPDOMappingParameter_mappedObject32      32
+        #define OD_1A00_33_TPDOMappingParameter_mappedObject33      33
+        #define OD_1A00_34_TPDOMappingParameter_mappedObject34      34
+        #define OD_1A00_35_TPDOMappingParameter_mappedObject35      35
+        #define OD_1A00_36_TPDOMappingParameter_mappedObject36      36
+        #define OD_1A00_37_TPDOMappingParameter_mappedObject37      37
+        #define OD_1A00_38_TPDOMappingParameter_mappedObject38      38
+        #define OD_1A00_39_TPDOMappingParameter_mappedObject39      39
+        #define OD_1A00_40_TPDOMappingParameter_mappedObject40      40
+        #define OD_1A00_41_TPDOMappingParameter_mappedObject41      41
+        #define OD_1A00_42_TPDOMappingParameter_mappedObject42      42
+        #define OD_1A00_43_TPDOMappingParameter_mappedObject43      43
+        #define OD_1A00_44_TPDOMappingParameter_mappedObject44      44
+        #define OD_1A00_45_TPDOMappingParameter_mappedObject45      45
+        #define OD_1A00_46_TPDOMappingParameter_mappedObject46      46
+        #define OD_1A00_47_TPDOMappingParameter_mappedObject47      47
+        #define OD_1A00_48_TPDOMappingParameter_mappedObject48      48
+        #define OD_1A00_49_TPDOMappingParameter_mappedObject49      49
+        #define OD_1A00_50_TPDOMappingParameter_mappedObject50      50
+        #define OD_1A00_51_TPDOMappingParameter_mappedObject51      51
+        #define OD_1A00_52_TPDOMappingParameter_mappedObject52      52
+        #define OD_1A00_53_TPDOMappingParameter_mappedObject53      53
+        #define OD_1A00_54_TPDOMappingParameter_mappedObject54      54
+        #define OD_1A00_55_TPDOMappingParameter_mappedObject55      55
+        #define OD_1A00_56_TPDOMappingParameter_mappedObject56      56
+        #define OD_1A00_57_TPDOMappingParameter_mappedObject57      57
+        #define OD_1A00_58_TPDOMappingParameter_mappedObject58      58
+        #define OD_1A00_59_TPDOMappingParameter_mappedObject59      59
+        #define OD_1A00_60_TPDOMappingParameter_mappedObject60      60
+        #define OD_1A00_61_TPDOMappingParameter_mappedObject61      61
+        #define OD_1A00_62_TPDOMappingParameter_mappedObject62      62
+        #define OD_1A00_63_TPDOMappingParameter_mappedObject63      63
+        #define OD_1A00_64_TPDOMappingParameter_mappedObject64      64
 
 /*1A01 */
         #define OD_1A01_TPDOMappingParameter                        0x1A01
@@ -463,6 +853,62 @@
         #define OD_1A01_6_TPDOMappingParameter_mappedObject6        6
         #define OD_1A01_7_TPDOMappingParameter_mappedObject7        7
         #define OD_1A01_8_TPDOMappingParameter_mappedObject8        8
+        #define OD_1A01_9_TPDOMappingParameter_mappedObject9        9
+        #define OD_1A01_10_TPDOMappingParameter_mappedObject10      10
+        #define OD_1A01_11_TPDOMappingParameter_mappedObject11      11
+        #define OD_1A01_12_TPDOMappingParameter_mappedObject12      12
+        #define OD_1A01_13_TPDOMappingParameter_mappedObject13      13
+        #define OD_1A01_14_TPDOMappingParameter_mappedObject14      14
+        #define OD_1A01_15_TPDOMappingParameter_mappedObject15      15
+        #define OD_1A01_16_TPDOMappingParameter_mappedObject16      16
+        #define OD_1A01_17_TPDOMappingParameter_mappedObject17      17
+        #define OD_1A01_18_TPDOMappingParameter_mappedObject18      18
+        #define OD_1A01_19_TPDOMappingParameter_mappedObject19      19
+        #define OD_1A01_20_TPDOMappingParameter_mappedObject20      20
+        #define OD_1A01_21_TPDOMappingParameter_mappedObject21      21
+        #define OD_1A01_22_TPDOMappingParameter_mappedObject22      22
+        #define OD_1A01_23_TPDOMappingParameter_mappedObject23      23
+        #define OD_1A01_24_TPDOMappingParameter_mappedObject24      24
+        #define OD_1A01_25_TPDOMappingParameter_mappedObject25      25
+        #define OD_1A01_26_TPDOMappingParameter_mappedObject26      26
+        #define OD_1A01_27_TPDOMappingParameter_mappedObject27      27
+        #define OD_1A01_28_TPDOMappingParameter_mappedObject28      28
+        #define OD_1A01_29_TPDOMappingParameter_mappedObject29      29
+        #define OD_1A01_30_TPDOMappingParameter_mappedObject30      30
+        #define OD_1A01_31_TPDOMappingParameter_mappedObject31      31
+        #define OD_1A01_32_TPDOMappingParameter_mappedObject32      32
+        #define OD_1A01_33_TPDOMappingParameter_mappedObject33      33
+        #define OD_1A01_34_TPDOMappingParameter_mappedObject34      34
+        #define OD_1A01_35_TPDOMappingParameter_mappedObject35      35
+        #define OD_1A01_36_TPDOMappingParameter_mappedObject36      36
+        #define OD_1A01_37_TPDOMappingParameter_mappedObject37      37
+        #define OD_1A01_38_TPDOMappingParameter_mappedObject38      38
+        #define OD_1A01_39_TPDOMappingParameter_mappedObject39      39
+        #define OD_1A01_40_TPDOMappingParameter_mappedObject40      40
+        #define OD_1A01_41_TPDOMappingParameter_mappedObject41      41
+        #define OD_1A01_42_TPDOMappingParameter_mappedObject42      42
+        #define OD_1A01_43_TPDOMappingParameter_mappedObject43      43
+        #define OD_1A01_44_TPDOMappingParameter_mappedObject44      44
+        #define OD_1A01_45_TPDOMappingParameter_mappedObject45      45
+        #define OD_1A01_46_TPDOMappingParameter_mappedObject46      46
+        #define OD_1A01_47_TPDOMappingParameter_mappedObject47      47
+        #define OD_1A01_48_TPDOMappingParameter_mappedObject48      48
+        #define OD_1A01_49_TPDOMappingParameter_mappedObject49      49
+        #define OD_1A01_50_TPDOMappingParameter_mappedObject50      50
+        #define OD_1A01_51_TPDOMappingParameter_mappedObject51      51
+        #define OD_1A01_52_TPDOMappingParameter_mappedObject52      52
+        #define OD_1A01_53_TPDOMappingParameter_mappedObject53      53
+        #define OD_1A01_54_TPDOMappingParameter_mappedObject54      54
+        #define OD_1A01_55_TPDOMappingParameter_mappedObject55      55
+        #define OD_1A01_56_TPDOMappingParameter_mappedObject56      56
+        #define OD_1A01_57_TPDOMappingParameter_mappedObject57      57
+        #define OD_1A01_58_TPDOMappingParameter_mappedObject58      58
+        #define OD_1A01_59_TPDOMappingParameter_mappedObject59      59
+        #define OD_1A01_60_TPDOMappingParameter_mappedObject60      60
+        #define OD_1A01_61_TPDOMappingParameter_mappedObject61      61
+        #define OD_1A01_62_TPDOMappingParameter_mappedObject62      62
+        #define OD_1A01_63_TPDOMappingParameter_mappedObject63      63
+        #define OD_1A01_64_TPDOMappingParameter_mappedObject64      64
 
 /*1A02 */
         #define OD_1A02_TPDOMappingParameter                        0x1A02
@@ -476,6 +922,62 @@
         #define OD_1A02_6_TPDOMappingParameter_mappedObject6        6
         #define OD_1A02_7_TPDOMappingParameter_mappedObject7        7
         #define OD_1A02_8_TPDOMappingParameter_mappedObject8        8
+        #define OD_1A02_9_TPDOMappingParameter_mappedObject9        9
+        #define OD_1A02_10_TPDOMappingParameter_mappedObject10      10
+        #define OD_1A02_11_TPDOMappingParameter_mappedObject11      11
+        #define OD_1A02_12_TPDOMappingParameter_mappedObject12      12
+        #define OD_1A02_13_TPDOMappingParameter_mappedObject13      13
+        #define OD_1A02_14_TPDOMappingParameter_mappedObject14      14
+        #define OD_1A02_15_TPDOMappingParameter_mappedObject15      15
+        #define OD_1A02_16_TPDOMappingParameter_mappedObject16      16
+        #define OD_1A02_17_TPDOMappingParameter_mappedObject17      17
+        #define OD_1A02_18_TPDOMappingParameter_mappedObject18      18
+        #define OD_1A02_19_TPDOMappingParameter_mappedObject19      19
+        #define OD_1A02_20_TPDOMappingParameter_mappedObject20      20
+        #define OD_1A02_21_TPDOMappingParameter_mappedObject21      21
+        #define OD_1A02_22_TPDOMappingParameter_mappedObject22      22
+        #define OD_1A02_23_TPDOMappingParameter_mappedObject23      23
+        #define OD_1A02_24_TPDOMappingParameter_mappedObject24      24
+        #define OD_1A02_25_TPDOMappingParameter_mappedObject25      25
+        #define OD_1A02_26_TPDOMappingParameter_mappedObject26      26
+        #define OD_1A02_27_TPDOMappingParameter_mappedObject27      27
+        #define OD_1A02_28_TPDOMappingParameter_mappedObject28      28
+        #define OD_1A02_29_TPDOMappingParameter_mappedObject29      29
+        #define OD_1A02_30_TPDOMappingParameter_mappedObject30      30
+        #define OD_1A02_31_TPDOMappingParameter_mappedObject31      31
+        #define OD_1A02_32_TPDOMappingParameter_mappedObject32      32
+        #define OD_1A02_33_TPDOMappingParameter_mappedObject33      33
+        #define OD_1A02_34_TPDOMappingParameter_mappedObject34      34
+        #define OD_1A02_35_TPDOMappingParameter_mappedObject35      35
+        #define OD_1A02_36_TPDOMappingParameter_mappedObject36      36
+        #define OD_1A02_37_TPDOMappingParameter_mappedObject37      37
+        #define OD_1A02_38_TPDOMappingParameter_mappedObject38      38
+        #define OD_1A02_39_TPDOMappingParameter_mappedObject39      39
+        #define OD_1A02_40_TPDOMappingParameter_mappedObject40      40
+        #define OD_1A02_41_TPDOMappingParameter_mappedObject41      41
+        #define OD_1A02_42_TPDOMappingParameter_mappedObject42      42
+        #define OD_1A02_43_TPDOMappingParameter_mappedObject43      43
+        #define OD_1A02_44_TPDOMappingParameter_mappedObject44      44
+        #define OD_1A02_45_TPDOMappingParameter_mappedObject45      45
+        #define OD_1A02_46_TPDOMappingParameter_mappedObject46      46
+        #define OD_1A02_47_TPDOMappingParameter_mappedObject47      47
+        #define OD_1A02_48_TPDOMappingParameter_mappedObject48      48
+        #define OD_1A02_49_TPDOMappingParameter_mappedObject49      49
+        #define OD_1A02_50_TPDOMappingParameter_mappedObject50      50
+        #define OD_1A02_51_TPDOMappingParameter_mappedObject51      51
+        #define OD_1A02_52_TPDOMappingParameter_mappedObject52      52
+        #define OD_1A02_53_TPDOMappingParameter_mappedObject53      53
+        #define OD_1A02_54_TPDOMappingParameter_mappedObject54      54
+        #define OD_1A02_55_TPDOMappingParameter_mappedObject55      55
+        #define OD_1A02_56_TPDOMappingParameter_mappedObject56      56
+        #define OD_1A02_57_TPDOMappingParameter_mappedObject57      57
+        #define OD_1A02_58_TPDOMappingParameter_mappedObject58      58
+        #define OD_1A02_59_TPDOMappingParameter_mappedObject59      59
+        #define OD_1A02_60_TPDOMappingParameter_mappedObject60      60
+        #define OD_1A02_61_TPDOMappingParameter_mappedObject61      61
+        #define OD_1A02_62_TPDOMappingParameter_mappedObject62      62
+        #define OD_1A02_63_TPDOMappingParameter_mappedObject63      63
+        #define OD_1A02_64_TPDOMappingParameter_mappedObject64      64
 
 /*1A03 */
         #define OD_1A03_TPDOMappingParameter                        0x1A03
@@ -489,6 +991,62 @@
         #define OD_1A03_6_TPDOMappingParameter_mappedObject6        6
         #define OD_1A03_7_TPDOMappingParameter_mappedObject7        7
         #define OD_1A03_8_TPDOMappingParameter_mappedObject8        8
+        #define OD_1A03_9_TPDOMappingParameter_mappedObject9        9
+        #define OD_1A03_10_TPDOMappingParameter_mappedObject10      10
+        #define OD_1A03_11_TPDOMappingParameter_mappedObject11      11
+        #define OD_1A03_12_TPDOMappingParameter_mappedObject12      12
+        #define OD_1A03_13_TPDOMappingParameter_mappedObject13      13
+        #define OD_1A03_14_TPDOMappingParameter_mappedObject14      14
+        #define OD_1A03_15_TPDOMappingParameter_mappedObject15      15
+        #define OD_1A03_16_TPDOMappingParameter_mappedObject16      16
+        #define OD_1A03_17_TPDOMappingParameter_mappedObject17      17
+        #define OD_1A03_18_TPDOMappingParameter_mappedObject18      18
+        #define OD_1A03_19_TPDOMappingParameter_mappedObject19      19
+        #define OD_1A03_20_TPDOMappingParameter_mappedObject20      20
+        #define OD_1A03_21_TPDOMappingParameter_mappedObject21      21
+        #define OD_1A03_22_TPDOMappingParameter_mappedObject22      22
+        #define OD_1A03_23_TPDOMappingParameter_mappedObject23      23
+        #define OD_1A03_24_TPDOMappingParameter_mappedObject24      24
+        #define OD_1A03_25_TPDOMappingParameter_mappedObject25      25
+        #define OD_1A03_26_TPDOMappingParameter_mappedObject26      26
+        #define OD_1A03_27_TPDOMappingParameter_mappedObject27      27
+        #define OD_1A03_28_TPDOMappingParameter_mappedObject28      28
+        #define OD_1A03_29_TPDOMappingParameter_mappedObject29      29
+        #define OD_1A03_30_TPDOMappingParameter_mappedObject30      30
+        #define OD_1A03_31_TPDOMappingParameter_mappedObject31      31
+        #define OD_1A03_32_TPDOMappingParameter_mappedObject32      32
+        #define OD_1A03_33_TPDOMappingParameter_mappedObject33      33
+        #define OD_1A03_34_TPDOMappingParameter_mappedObject34      34
+        #define OD_1A03_35_TPDOMappingParameter_mappedObject35      35
+        #define OD_1A03_36_TPDOMappingParameter_mappedObject36      36
+        #define OD_1A03_37_TPDOMappingParameter_mappedObject37      37
+        #define OD_1A03_38_TPDOMappingParameter_mappedObject38      38
+        #define OD_1A03_39_TPDOMappingParameter_mappedObject39      39
+        #define OD_1A03_40_TPDOMappingParameter_mappedObject40      40
+        #define OD_1A03_41_TPDOMappingParameter_mappedObject41      41
+        #define OD_1A03_42_TPDOMappingParameter_mappedObject42      42
+        #define OD_1A03_43_TPDOMappingParameter_mappedObject43      43
+        #define OD_1A03_44_TPDOMappingParameter_mappedObject44      44
+        #define OD_1A03_45_TPDOMappingParameter_mappedObject45      45
+        #define OD_1A03_46_TPDOMappingParameter_mappedObject46      46
+        #define OD_1A03_47_TPDOMappingParameter_mappedObject47      47
+        #define OD_1A03_48_TPDOMappingParameter_mappedObject48      48
+        #define OD_1A03_49_TPDOMappingParameter_mappedObject49      49
+        #define OD_1A03_50_TPDOMappingParameter_mappedObject50      50
+        #define OD_1A03_51_TPDOMappingParameter_mappedObject51      51
+        #define OD_1A03_52_TPDOMappingParameter_mappedObject52      52
+        #define OD_1A03_53_TPDOMappingParameter_mappedObject53      53
+        #define OD_1A03_54_TPDOMappingParameter_mappedObject54      54
+        #define OD_1A03_55_TPDOMappingParameter_mappedObject55      55
+        #define OD_1A03_56_TPDOMappingParameter_mappedObject56      56
+        #define OD_1A03_57_TPDOMappingParameter_mappedObject57      57
+        #define OD_1A03_58_TPDOMappingParameter_mappedObject58      58
+        #define OD_1A03_59_TPDOMappingParameter_mappedObject59      59
+        #define OD_1A03_60_TPDOMappingParameter_mappedObject60      60
+        #define OD_1A03_61_TPDOMappingParameter_mappedObject61      61
+        #define OD_1A03_62_TPDOMappingParameter_mappedObject62      62
+        #define OD_1A03_63_TPDOMappingParameter_mappedObject63      63
+        #define OD_1A03_64_TPDOMappingParameter_mappedObject64      64
 
 /*1F80 */
         #define OD_1F80_NMTStartup                                  0x1F80
