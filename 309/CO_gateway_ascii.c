@@ -488,7 +488,7 @@ static void responseWithError(CO_GTWA_t *gtwa,
     }
 
     gtwa->respBufCount = snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                                  "[%"PRId32"] ERROR:%d #%s\r\n",
+                                  "[%"PRIu32"] ERROR:%d #%s\r\n",
                                   gtwa->sequence, respErrorCode, desc);
     respBufTransfer(gtwa);
 }
@@ -509,7 +509,7 @@ static void responseWithErrorSDO(CO_GTWA_t *gtwa,
     }
 
     gtwa->respBufCount = snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                                  "[%"PRId32"] ERROR:0x%08X #%s\r\n",
+                                  "[%"PRIu32"] ERROR:0x%08X #%s\r\n",
                                   gtwa->sequence, abortCode, desc);
     respBufTransfer(gtwa);
 }
@@ -520,7 +520,7 @@ static inline void responseWithError(CO_GTWA_t *gtwa,
                                      CO_GTWA_respErrorCode_t respErrorCode)
 {
     gtwa->respBufCount = snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                                  "[%"PRId32"] ERROR:%d\r\n",
+                                  "[%"PRIu32"] ERROR:%d\r\n",
                                   gtwa->sequence, respErrorCode);
     respBufTransfer(gtwa);
 }
@@ -530,7 +530,7 @@ static inline void responseWithErrorSDO(CO_GTWA_t *gtwa,
                                         CO_SDO_abortCode_t abortCode)
 {
     gtwa->respBufCount = snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                                  "[%"PRId32"] ERROR:0x%08X\r\n",
+                                  "[%"PRIu32"] ERROR:0x%08X\r\n",
                                   gtwa->sequence, abortCode);
     respBufTransfer(gtwa);
 }
@@ -540,7 +540,7 @@ static inline void responseWithErrorSDO(CO_GTWA_t *gtwa,
 
 static inline void responseWithOK(CO_GTWA_t *gtwa) {
     gtwa->respBufCount = snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                                  "[%"PRId32"] OK\r\n",
+                                  "[%"PRIu32"] OK\r\n",
                                   gtwa->sequence);
     respBufTransfer(gtwa);
 }
@@ -1537,7 +1537,7 @@ void CO_GTWA_process(CO_GTWA_t *gtwa,
             if (!gtwa->SDOdataCopyStatus) {
                 gtwa->respBufCount = snprintf(gtwa->respBuf,
                                               CO_GTWA_RESP_BUF_SIZE - 2,
-                                              "[%"PRId32"] ",
+                                              "[%"PRIu32"] ",
                                               gtwa->sequence);
                 gtwa->SDOdataCopyStatus = true;
             }
@@ -1717,12 +1717,12 @@ void CO_GTWA_process(CO_GTWA_t *gtwa,
                 if (gtwa->lssInquireCs == CO_LSS_INQUIRE_NODE_ID) {
                     gtwa->respBufCount =
                         snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                                 "[%"PRId32"] 0x%02"PRIX32"\r\n",
+                                 "[%"PRIu32"] 0x%02"PRIX32"\r\n",
                                  gtwa->sequence, value & 0xFF);
                 } else {
                     gtwa->respBufCount =
                         snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                                 "[%"PRId32"] 0x%08"PRIX32"\r\n",
+                                 "[%"PRIu32"] 0x%08"PRIX32"\r\n",
                                  gtwa->sequence, value);
                 }
                 respBufTransfer(gtwa);
@@ -1742,7 +1742,7 @@ void CO_GTWA_process(CO_GTWA_t *gtwa,
             if (ret == CO_LSSmaster_OK) {
                 gtwa->respBufCount =
                     snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                             "[%"PRId32"] 0x%08"PRIX32" 0x%08"PRIX32 \
+                             "[%"PRIu32"] 0x%08"PRIX32" 0x%08"PRIX32 \
                              " 0x%08"PRIX32" 0x%08"PRIX32"\r\n",
                              gtwa->sequence,
                              gtwa->lssAddress.identity.vendorID,
@@ -1766,7 +1766,7 @@ void CO_GTWA_process(CO_GTWA_t *gtwa,
             if (ret == CO_LSSmaster_OK || ret == CO_LSSmaster_SCAN_FINISHED) {
                 gtwa->respBufCount =
                     snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
-                             "[%"PRId32"] 0x%08"PRIX32" 0x%08"PRIX32 \
+                             "[%"PRIu32"] 0x%08"PRIX32" 0x%08"PRIX32 \
                              " 0x%08"PRIX32" 0x%08"PRIX32"\r\n",
                              gtwa->sequence,
                              gtwa->lssFastscan.found.identity.vendorID,
@@ -1798,7 +1798,7 @@ void CO_GTWA_process(CO_GTWA_t *gtwa,
                     gtwa->respBufCount =
                         snprintf(gtwa->respBuf, CO_GTWA_RESP_BUF_SIZE,
                                  "# Found %d nodes, search finished.\r\n" \
-                                 "[%"PRId32"] OK\r\n",
+                                 "[%"PRIu32"] OK\r\n",
                                  gtwa->lssNodeCount,
                                  gtwa->sequence);
                     respBufTransfer(gtwa);
